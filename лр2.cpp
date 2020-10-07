@@ -11,12 +11,12 @@ int n, it; // it = iterations
 bool Error = true;
 while (Error)
 {
-cout << "Enter x (-1 < x <= 1): ";
+cout << "vvedite x, x (-1 < x <= 1): ";
 cin >> x;
 	if ((x > -1) and (x <= 1))
 		Error = false;
 	else
-	cout << "incorrect value, try again" << endl;
+	cout << "oshibka, vvedite snova" << endl;
 }
 for (int i = -2; i >= -6; i--)
 {
@@ -27,13 +27,12 @@ for (int i = -2; i >= -6; i--)
 	
 	while (abs(a) > E)
 	{
-		a = pow(-1, n) * pow(x, 2 * n + 1) / (2 * n + 1);
-		
+		a = pow(-1, n) * pow(x, 2 * n + 1) / (2 * n + 1);	
 		n++;
 		it++;
 	}
 	cout << "arctan = " << a; 
-		cout << "  vipolneno pri = " << E;
+	cout << "  vipolneno pri = " << E;
 	cout	<< ", sdelano " << it << " iterations" << endl;
 }
 }
